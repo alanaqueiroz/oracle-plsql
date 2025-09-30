@@ -54,6 +54,7 @@ UPDATE PACIENTE
 SET DATA_NASC = TO_DATE('11/11/2012', 'DD/MM/YYYY'), GENERO = 'F', NOME = NOME||' TESTE'
 WHERE ID_PAC = 1;
 
-ROLLBACK; -- Desfaz a última transação
+ROLLBACK; -- Desfaz a última transação não confirmada na transação no banco de dados
+COMMIT; -- Confirma permanentemente todas as alterações feitas pela sessão
 
 DELETE FROM ESPECIALIDADE WHERE ID_ESP = 20;
