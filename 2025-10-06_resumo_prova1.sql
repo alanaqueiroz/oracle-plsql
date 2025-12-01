@@ -1,5 +1,5 @@
 -- ==========================
--- EXEMPLOS DE SQL - RESUMO
+-- EXEMPLOS DE SQL - RESUMO P1
 -- ==========================
 
 -- 1. DROP TABLE (com CASCADE CONSTRAINTS)
